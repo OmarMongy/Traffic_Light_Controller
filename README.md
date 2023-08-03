@@ -10,7 +10,7 @@ Efficient management of traffic lights is crucial for maintaining smooth traffic
 The Traffic Light Controller is designed to manage the traffic flow at an intersection with two roads, A and B. It is equipped with the following inputs and outputs:
 
 **Inputs:**
-clk (clock signal): The clock signal used to synchronize the internal state transitions of the controller.
+ `clk`: (clock signal): The clock signal used to synchronize the internal state transitions of the controller.
 reset_n (active low reset): A reset signal that initializes the controller to a default state when asserted (low).
 Sa (presence of cars on Road A): A binary input signal indicating the presence of cars on Road A.
 Sb (presence of cars on Road B): A binary input signal indicating the presence of cars on Road B.
