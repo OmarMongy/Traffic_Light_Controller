@@ -28,18 +28,23 @@ s0 = 0, s1 = 1, s2 = 2, s3 = 3, s4 = 4, s5 = 5, s6 = 6, s7 = 7, s8 = 8, s9 = 9, 
 
 ### The functionality of the Traffic Light Controller can be summarized as follows:
 
-The controller starts in state s0, which initializes the traffic lights on Road A to the green state and those on Road B to the red state.
+- The controller starts in state s0, which initializes the traffic lights on Road A to the green state and those on Road B to the red state.
 The state transitions occur on each clock edge and are triggered by the FSM logic.
 The controller uses inputs Sa and Sb to adjust its state accordingly. Presence of cars on Road B forces the controller to stay in state s5, allowing time for vehicles to pass.
-The controller stays in state s6 (yellow light for Road A and red light for Road B) for a certain period before proceeding to states s7 and s8, where Road A turns red and Road B turns green.
-In state s9, Road B enters a yellow light state before switching back to the red state (s10) and waiting for input changes.
-If both roads have no cars (Sa = 0 and Sb = 0), the controller transitions to state s12, which represents an all-red state, ensuring safety and synchronization.
-The Traffic Light Controller is designed to meet specific timing requirements for each road. The timing constraints for each state are as follows:
+- The controller stays in state s6 (yellow light for Road A and red light for Road B) for a certain period before proceeding to states s7 and s8, where Road A turns red and Road B turns green.
+- In state s9, Road B enters a yellow light state before switching back to the red state (s10) and waiting for input changes.
+- If both roads have no cars (Sa = 0 and Sb = 0), the controller transitions to state s12, which represents an all-red state, ensuring safety and synchronization.
+  
+### The Traffic Light Controller is designed to meet specific timing requirements for each road. The timing constraints for each state are as follows:
 
-Street A (Road A) will remain green for 60 seconds unless a car approaches Street B (Road B).
-Street B (Road B) will remain green for 50 seconds unless there are cars present on Street B and Street A is empty.
-If cars are present on Street B and Street A is empty, 10 seconds will be added to the green time for Street B.
-If there are no cars present on Street B, the green light for Street B will turn off, and the main Street A will return to green.
+- Street A (Road A) will remain green for 60 seconds unless a car approaches Street B (Road B).
+  
+- Street B (Road B) will remain green for 50 seconds unless there are cars present on Street B and Street A is empty.
+  
+- If cars are present on Street B and Street A is empty, 10 seconds will be added to the green time for Street B.
+  
+- If there are no cars present on Street B, the green light for Street B will turn off, and the main Street A will return to green.
+  
 ## 4. Traffic Light Controller Design:
 The Traffic Light Controller is implemented using two always blocks: one for sequential logic and the other for combinatorial logic.
 
