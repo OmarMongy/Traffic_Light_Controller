@@ -24,7 +24,7 @@ The Traffic Light Controller is designed to manage the traffic flow at an inters
 - `Yb` (Yellow signal for Road B) : A binary output signal representing the yellow light state for Road B.
 - `Gb` (Green signal for Road B) : A binary output signal representing the green light state for Road B.
 
-![Inputs and Outputs](https://raw.githubusercontent.com/OmarMongy/Images/main/Screenshot%202023-08-03%20140123.png?token=GHSAT0AAAAAACFB25R2HCDD2RD4VKSY5CT2ZGLRJCQ)
+![Inputs and Outputs](https://raw.githubusercontent.com/OmarMongy/Images/main/Screenshot%202023-08-03%20140123.png?token=GHSAT0AAAAAACFB25R2GK7E7RUBOLHPJI5CZGLRQWA)
 
 
 ## 3. Functionality:
