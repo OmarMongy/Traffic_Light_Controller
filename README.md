@@ -9,6 +9,8 @@ Efficient management of traffic lights is crucial for maintaining smooth traffic
 ## 2. Traffic Light Controller Specification:
 The Traffic Light Controller is designed to manage the traffic flow at an intersection with two roads, A and B. It is equipped with the following inputs and outputs:
 
+![The intersection of the two roades A and B](https://raw.githubusercontent.com/OmarMongy/Images/main/Screenshot%202023-08-03%20140115.png?token=GHSAT0AAAAAACFB25R2VLX73GZWMPNB4MAGZGLRHKQ)
+
 ## Inputs:
 - `clk`: (clock signal) : The clock signal used to synchronize the internal state transitions of the controller.
 - `reset_n` (active low reset) : A reset signal that initializes the controller to a default state when asserted (low).
@@ -21,6 +23,10 @@ The Traffic Light Controller is designed to manage the traffic flow at an inters
 - `Rb` (Red signal for Road B) : A binary output signal representing the red light state for Road B.
 - `Yb` (Yellow signal for Road B) : A binary output signal representing the yellow light state for Road B.
 - `Gb` (Green signal for Road B) : A binary output signal representing the green light state for Road B.
+
+![Inputs and Outputs](https://raw.githubusercontent.com/OmarMongy/Images/main/Screenshot%202023-08-03%20140123.png?token=GHSAT0AAAAAACFB25R2HCDD2RD4VKSY5CT2ZGLRJCQ)
+
+
 ## 3. Functionality:
 The Traffic Light Controller operates as a finite state machine (FSM) with twelve distinct states, each controlling different traffic light configurations. The states are represented by the following localparam values:
 
