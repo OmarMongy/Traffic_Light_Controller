@@ -10,17 +10,17 @@ Efficient management of traffic lights is crucial for maintaining smooth traffic
 The Traffic Light Controller is designed to manage the traffic flow at an intersection with two roads, A and B. It is equipped with the following inputs and outputs:
 
 ## Inputs:
- `clk`: (clock signal): The clock signal used to synchronize the internal state transitions of the controller.
-reset_n (active low reset): A reset signal that initializes the controller to a default state when asserted (low).
-Sa (presence of cars on Road A): A binary input signal indicating the presence of cars on Road A.
-Sb (presence of cars on Road B): A binary input signal indicating the presence of cars on Road B.
-**Outputs:**
-Ra (Red signal for Road A): A binary output signal representing the red light state for Road A.
-Ya (Yellow signal for Road A): A binary output signal representing the yellow light state for Road A.
-Ga (Green signal for Road A): A binary output signal representing the green light state for Road A.
-Rb (Red signal for Road B): A binary output signal representing the red light state for Road B.
-Yb (Yellow signal for Road B): A binary output signal representing the yellow light state for Road B.
-Gb (Green signal for Road B): A binary output signal representing the green light state for Road B.
+- `clk`: (clock signal): The clock signal used to synchronize the internal state transitions of the controller.
+- `reset_n` (active low reset): A reset signal that initializes the controller to a default state when asserted (low).
+- `Sa` (presence of cars on Road A): A binary input signal indicating the presence of cars on Road A.
+- `Sb` (presence of cars on Road B): A binary input signal indicating the presence of cars on Road B.
+## Outputs:
+- `Ra` (Red signal for Road A): A binary output signal representing the red light state for Road A.
+- `Ya` (Yellow signal for Road A): A binary output signal representing the yellow light state for Road A.
+- `Ga` (Green signal for Road A): A binary output signal representing the green light state for Road A.
+- `Rb` (Red signal for Road B): A binary output signal representing the red light state for Road B.
+- `Yb` (Yellow signal for Road B): A binary output signal representing the yellow light state for Road B.
+- `Gb` (Green signal for Road B): A binary output signal representing the green light state for Road B.
 ## 3. Functionality:
 The Traffic Light Controller operates as a finite state machine (FSM) with twelve distinct states, each controlling different traffic light configurations. The states are represented by the following localparam values:
 
