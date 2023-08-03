@@ -26,7 +26,7 @@ The Traffic Light Controller operates as a finite state machine (FSM) with twelv
 
 s0 = 0, s1 = 1, s2 = 2, s3 = 3, s4 = 4, s5 = 5, s6 = 6, s7 = 7, s8 = 8, s9 = 9, s10 = 10, s11 = 11, s12 = 12.
 
-The functionality of the Traffic Light Controller can be summarized as follows:
+# The functionality of the Traffic Light Controller can be summarized as follows:
 
 The controller starts in state s0, which initializes the traffic lights on Road A to the green state and those on Road B to the red state.
 The state transitions occur on each clock edge and are triggered by the FSM logic.
