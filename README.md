@@ -50,7 +50,9 @@ The controller uses inputs Sa and Sb to adjust its state accordingly. Presence o
 - If cars are present on Street B and Street A is empty, 10 seconds will be added to the green time for Street B.
   
 - If there are no cars present on Street B, the green light for Street B will turn off, and the main Street A will return to green.
-  
+
+![Example](https://raw.githubusercontent.com/OmarMongy/Images/main/Screenshot%202023-08-03%20140115.png?token=GHSAT0AAAAAACFB25R3V2BJP3QEC2LPPJROZGLROZA)
+
 ## 4. Traffic Light Controller Design:
 The Traffic Light Controller is implemented using two always blocks: one for sequential logic and the other for combinatorial logic.
 
