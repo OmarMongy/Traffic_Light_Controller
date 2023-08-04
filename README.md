@@ -24,7 +24,7 @@ The Traffic Light Controller is designed to manage the traffic flow at an inters
 - `Yb` (Yellow signal for Road B) : A binary output signal representing the yellow light state for Road B.
 - `Gb` (Green signal for Road B) : A binary output signal representing the green light state for Road B.
 
-![Inputs and Outputs](https://photos.google.com/photo/AF1QipNXyhXckEVUP4J6vUdUQKTt_OAPoAGg2C87xXxb)
+![Inputs and Outputs](https://i.ibb.co/NsrmYZL/Screenshot-2023-08-03-140123.png)
 
 
 ## 3. Functionality:
@@ -51,7 +51,7 @@ The controller uses inputs Sa and Sb to adjust its state accordingly. Presence o
   
 - If there are no cars present on Street B, the green light for Street B will turn off, and the main Street A will return to green.
 
-![Example](https://photos.google.com/photo/AF1QipNXztXpnXz1XneIcObG98dw6Vx1O7zwg5mCTDrM)
+![Example](https://i.ibb.co/ZB6dVxz/Screenshot-2023-08-03-140115.png)
 
 ## 4. Traffic Light Controller Design:
 The Traffic Light Controller is implemented using two always blocks: one for sequential logic and the other for combinatorial logic.
