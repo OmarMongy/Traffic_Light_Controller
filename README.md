@@ -9,7 +9,7 @@ Efficient management of traffic lights is crucial for maintaining smooth traffic
 ## 2. Traffic Light Controller Specification:
 The Traffic Light Controller is designed to manage the traffic flow at an intersection with two roads, A and B. It is equipped with the following inputs and outputs:
 
-![The intersection of the two roades A and B](https://media.licdn.com/dms/image/D4D22AQGrrvY1YbswPQ/feedshare-shrink_800/0/1690719747641?e=1694044800&v=beta&t=qK2uHoVxFSYPkvE6ysE28buBNFLiY9g3g4nv4lKrRE0)
+![The intersection of the two roades A and B](https://i.ibb.co/4ZRwmQR/Screenshot-2023-08-03-140931.png)
 
 ## Inputs:
 - `clk`: (clock signal) : The clock signal used to synchronize the internal state transitions of the controller.
